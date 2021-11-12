@@ -90,6 +90,49 @@
 
 /////////////////////////////////  for  /////////////////////////////////////
 
-for (let i = 0; i < 10; i++) {
-    console.log("for", i);
-}
+// for (let i = 0; i < 10; i++) {
+//     console.log("for", i);
+// }
+
+// for (let i = 10; i !== 0; i--) {
+//     if (i === 5) break;
+//     console.log("for", i)
+// }
+
+// for (let i = 0; i < 10; i++) {
+//     if(i + 6 > 10) break;
+//     console.log("for", i);
+// }
+
+// for (let i = 0; i < 10; i++) {
+//     if(i === 5) continue;
+//     console.log("for", i);
+// }
+
+/////////////////////////////////////////////////////////////////////  задачи  /////////////////////////////////////////////////////////////////////
+
+// let s = 'Строка';
+// let i = 0;
+// while(i < 5) {
+//     console.log(s);
+//     i++;
+// }
+
+// let n = 1000;
+// let m = 4;
+// day = 0;
+// for(; n > m; day++) {
+//     n = Math.floor (n / 2);
+//     console.log(n);
+// }
+// console.log(day);
+
+// let n = 1800;
+// let m = 2020;
+// let p = 1961;
+// let i = 0;
+// for (;n <= p;n++) {
+//     i++;
+//     if (n === p) break;
+// }
+// console.log(n,i);
