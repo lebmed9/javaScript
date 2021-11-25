@@ -80,13 +80,13 @@
 //     вызываться, если число четное. Вторая переданная коллбэк-функция будет вызываться с 
 //     переданным в нее числом , если число нечетное, и будет возвращать число, увеличенное на 1.
 
-const square = (num) => num ** 2;
-const max = (num) => num + 1;
-const main = (num, f1, f2) => {
-    if (num % 2 === 0) {
-        return f1(num);
-    } else {
-        return f2(num); 
-    }
-}
-console.log(main(7, square, max));
+// const square = (num) => num ** 2;
+// const max = (num) => num + 1;
+// const main = (num, f1, f2) => {
+//     if (num % 2 === 0) {
+//         return f1(num);
+//     } else {
+//         return f2(num); 
+//     }
+// }
+// console.log(main(7, square, max));
