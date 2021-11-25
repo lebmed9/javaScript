@@ -1,3 +1,4 @@
+
 // let number = prompt ("Введите числло", 1);
 // console.log(typeof number);
 
