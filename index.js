@@ -87,5 +87,30 @@
 // console.log(repeat("Строка", 3));
 
 
+// 1. Создайте объект myFavoriteFilm, описывающий ваш любимый фильм. Объект должен содержать
+//    свойства с названием фильма, с датой выпуска, именем режиссера и страной выпуска.
 
+// let myFavoriteFilm = {
+//  name: "Кровавый спорт",
+//  date: "1980",
+//  reg: "Стивен",
+//  country: "USA",
+// }
+// console.log(myFavoriteFilm);
 
+// 2. Добавить свойство содержащее значение выручки фильма в прокате.
+
+let myFavoriteFilm = {
+     title: "Кровавый спорт",
+     date: "1980",
+     reg: "Стивен",
+     country: "USA",
+    }
+    myFavoriteFilm.profit = '10.000';
+
+    myFavoriteFilm.showTitle = function () {
+        console.log(myFavoriteFilm.title);
+    };
+
+    delete myFavoriteFilm.date;
+    console.log(myFavoriteFilm);

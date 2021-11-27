@@ -1,62 +1,112 @@
-// Сделайте функцию, которая возвращает квадрат числа. Число передается параметром.
-
-// const getSquareNum = (num) => num ** 2;
-
-// Сделайте функцию, которая параметрами принимает 2 числа. Если эти числа равны - пусть функция вернет true, а если не равны - false.
-
-// const isEqual = (num1, num2) => num1 === num2;
-
-// Сделайте функцию, которая параметрами принимает 2 числа. Если их сумма
-// больше 10 - пусть вернет true, а если нет то - false.
-
-//  const getResult = (num1, num2) =>  num1 + num2 > 10;
-
-// Сделайте функцию isNumberInRange, которая параметром принимает число и проверяет, что оно больше нуля и меньше 10.
-//  Если это так - пусть функция возвращает true, если не так - false.
-
-// const isNumberInRange = (num) => {
-//   return num > 0 && num < 10;
+// const user = {
+//   age: 27,
+//   name: "Дмитрий",
+//   "some-property": 123,
 // };
 
-// Создайте функцию rgb(), которая будет принимать три числовых аргумента и возвращать строку вида «rgb(23,100,134)».
-// Если аргументы не заданы, считать их равными нулю. Не проверять переменные на тип данных
+// user.city = "Нижний Новгород";
 
-// const rgb = (r = 0, g = 0, b = 0) => {
-//   return `rgb(${r}, ${g}, ${b})`;
+// // console.log(user["some-property"]);
+
+// "name", "age", "city";
+
+// const request = (field, value) => {
+//   // запрос на сервер
+//   const filter = {
+//     [field]: value,
+//   };
+//   return filter;
 // };
 
-// console.log(rgb(1, 4));
+// const userList = request("name", "Дмитрий");
 
-// Написать функцию, которая принимает в себя три параметра - число и две функции.
-// Первая переданная функция  возвращает возведенное в квадрат переданное число и будет вызываться,
-//  если число четное. Вторая переданная коллбэк-функция будет вызываться с переданным в нее числом ,
-// если число нечетное, и будет возвращать число, увеличенное на 1.
+// const userList2 = request("age", "25");
 
-// const getSquareNum = (num) => num ** 2;
+// console.log(userList, userList2);
 
-// const getIncrement = (num) => num++;
+// const firstName = "Дмитрий";
+// const age = 2021 - 1994;
+// const user = {
+//   age,
+//   name: {
+//     firstName,
+//   },
+//   sayName() {
+//     console.log(user.name.firstName);
+//   },
+// };
+// //
+// // console.log(user);
+// // delete user.name.firstName;
+// // console.log(user);
 
-// const conditionalCb = (num, cb1, cb2) => {
-//   if (num % 2 === 0) {
-//     return cb1(num);
-//   } else {
-//     return cb2(num);
-//   }
+// // console.log(user.field);
+
+// user.sayName();
+
+// Создайте объект myFavoriteFilm, описывающий ваш любимый фильм. Объект
+// должен содержать свойства с названием фильма, с датой выпуска, именем
+// режиссера и страной выпуска.
+// Добавить свойство содержащее значение выручки фильма в прокате.
+// Добавить метод, который который будет выводить название фильма в консоль.
+// Удалить свойство содержащее год выпуска.
+// Вывести в консоль объект myFavoriteFilm и проанализировать его структуру.
+
+// const myFavoriteFilm = {
+//   title: "Lock, Stock and Two Smoking Barells",
+//   releaseDate: 1998,
+//   director: "Guy Ritchie",
+//   country: "England",
 // };
 
-// console.log(conditionalCb(num, getSquareNum, getIncrement));
+// myFavoriteFilm.boxOffice = "20000000";
 
-// Написать функцию mult(num1, num2 , num3) принимающую 3 числа. Функцию перемножает num1 на num2
-//  столько раз, сколько указано в третьем аргументе num3. Значения num1 и num2 по умолчанию 1,
-//  num3 по умолчанию 2.
-
-// const mult = (num1, num2, num3) => {
-//   for (let i = 0; i < num3; i++) {
-//     //   for (; num3 === 0; num3--) {
-//     // num1 = num1 * num2;
-//     num1 *= num2;
-//   }
-//   return num1;
+// myFavoriteFilm.showTitle = function () {
+//   console.log(myFavoriteFilm.title);
 // };
 
-// console.log(mult(2, 2, 2));
+// delete myFavoriteFilm.releaseDate;
+
+// console.log(myFavoriteFilm);
+
+// let num1 = 1;
+
+// let num2 = 2;
+// num1.test = 1;
+
+// console.log(num1.test);
+
+// console.log(new Number(num1).toString() + num2);
+// console.log(num1.toString() + num2);
+
+// console.log(str);
+// console.log(str2);
+
+// console.log(4100000000 == 4.1e9);
+
+// const num = 1.3445;
+
+// console.log(typeof +num.toFixed(1));
+
+// const size = "12.9px";
+
+// const num = parseInt(size);
+// console.log(num);
+
+// console.log(`Ivan`[0]);
+// let str = "Hello";
+
+// str = str + "world";
+
+// let result = str.slice(0, 7);
+// let result2 = str.substring(0, 7);
+// // console.log(result, result2);
+// console.log(index);
+
+// Реализовать функцию которая будет определять, в каком регистре записан n
+// элемент переданной строки, если в верхнем то вернуть true, в противном случае
+// вернуть false.
+
+// const isLowerCase = (str, n) => str[n] === str[n].toUpperCase();
+
+// console.log(isLowerCase("Hello", 0));
