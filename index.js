@@ -100,17 +100,44 @@
 
 // 2. Добавить свойство содержащее значение выручки фильма в прокате.
 
-let myFavoriteFilm = {
-     title: "Кровавый спорт",
-     date: "1980",
-     reg: "Стивен",
-     country: "USA",
-    }
-    myFavoriteFilm.profit = '10.000';
+// let myFavoriteFilm = {
+//      title: "Кровавый спорт",
+//      date: "1980",
+//      reg: "Стивен",
+//      country: "USA",
+//     }
+//     myFavoriteFilm.profit = '10.000';
 
-    myFavoriteFilm.showTitle = function () {
-        console.log(myFavoriteFilm.title);
-    };
+//     myFavoriteFilm.showTitle = function () {
+//         console.log(myFavoriteFilm.title);
+//     };
 
-    delete myFavoriteFilm.date;
-    console.log(myFavoriteFilm);
+//     delete myFavoriteFilm.date;
+    // console.log(myFavoriteFilm);
+
+// const ch = (n) => {
+// if (n == n.toUpperCase()) {
+//     console.log(true);
+// } else {
+//     console.log(false);
+// }
+// }
+// console.log(ch('N'));
+
+
+// const isLowerCase = (str, n) => str[n] === str[n].toUpperCase();
+// console.log(isLowerCase("Hello", 3));
+
+
+
+
+
+
+// const comparison = (str1, str2) => {
+//     if (str1.toUpperCase == str2.toUpperCase) {
+//         console.log(true)
+//     } else {
+//         console.log(false)
+//     }
+// }
+// console.log(comparison('n', 'A'));
