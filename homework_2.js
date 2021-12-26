@@ -22,7 +22,7 @@ console.log(1/"1");
 console.log("2" * "3");
 // 6
 
-console.log(4 + 5 + "O");
+console.log(4 + 5 + "0");
 // 9O
 
 console.log("l" + 4 + 5);
@@ -38,14 +38,11 @@ console.log(null == false);
 // false
 
 console.log(" -4 "/ 0 + 1);
-// Infinity
+// -Infinity
 
 console.log(null + 1);
 // 1
 
 console.log(undefined + null);
 // NaN
-
-
-
 

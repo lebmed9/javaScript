@@ -25,8 +25,6 @@ let sym = Symbol("foo");
 
 // console.log(typeof test);
 
-
-
 // console.log(num);
 // console.log(str);
 // console.log(nol);
