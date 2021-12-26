@@ -163,3 +163,10 @@
 //     let findDuble = num.filter((a, b) => num.indexOf(a) === b);
 //     console.log(findDuble);
 
+
+
+let admin;
+let name;
+name = 'Джон';
+admin = name;
+alert(admin);
