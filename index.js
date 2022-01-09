@@ -1,185 +1,215 @@
+// 1. Удаление указанного количества символов из строки
 
-// let number = prompt ("Введите числло", 1);
-// console.log(typeof number);
+//    Напишите функцию delete_characters(str, length), которая возвращает подстроку, состоящую из указанного количества символов.
 
-// const user = {
-//     role: "admin",
-// };
-
-// function checkAcsess(user) {
-//     return user.role === "admin";
+// var str = "Каждый охотник желает знать";
+// function delete_characters(str, length) {
+//   let result = str.substr(0, length);
+//   return result;
 // }
-// function showMessage() {
-//     checkAcsess(user) ? alert("R") : alert("F");
+// console.log(delete_characters(str, 3));
+
+// 2. Вставить тире между словами строки
+
+// Напишите функцию insert_dash(str), которая принимает строку str в качестве аргумента и вставляет тире (-) между словами.
+// При этом все символы строки необходимо перевести в верхний регистр.
+
+// var str = "HTML JavaScript PHP";
+
+// function insert_dash(str) {
+//   return str.replaceAll(" ", "-");
 // }
-// showMessage();
+// console.log(insert_dash(str));
 
+// 3. Сделать первую букву строки прописной
 
+// Напишите функцию, которая принимает строку в качестве аргумента и преобразует регистр первого символа строки из нижнего регистра в верхний.
 
-// function getName () {
-//     return "Дмитрий";
+// var str = "string not starting with capital";
+
+// function cursive_letter(str) {
+//   return str[0].toUpperCase() + str.slice(1);
 // }
-// function sayHi (text, name = getName()) {
-//     console.log(`${text} ${name}`);
-// }
-// sayHi("Привет, ");
+// console.log(cursive_letter(str));
 
+// 5. Смена регистра символов строки
+//    Напишите функцию change_register(str), которая принимает в качестве аргумента строку и и заменяет регистр каждого символа на противоположный.
+//    Например, если вводится «КаЖдЫй ОхОтНиК», то на выходе должно быть «кАжДыЙ оХоТнИк».
 
-// function getName () {
-//     return "Дмитрий";
-// }
-// function sayHi (text, name) {
-//     console.log(`${text} ${name}`);
-// }
-// sayHi("Привет, ", getName());
+// var str = "КаЖдЫй ОхОтНиК жЕлАеТ зНаТь";
+// let result = "";
 
-
-                    // Написать функцию, которая будет принимать имя пользователя, и 
-                    // выводить строку с приветствием данного пользователя, 
-                    // если имени пользователя нет, выводить приветствие гостя.
-
-
-// function sayHello (userName = 'Гость') {
-//     alert(`Привет, ${userName}`);
-// }
-
-// sayHello("Дмитрий");
-
-// function sayHello(userName = "Гость") {
-//     alert(`Привет, ${userName}`);
-// }
-// let userName = prompt('Введите ваше имя') || "Гость";
-
-// sayHello(userName);
-
-
-
-
-// Написать функцию, которая в качестве первого параметра
-// будет принимать численное значение, а в качестве второго
-// параметра будет принимать степень, в которую надо возвести
-// первый аргумент. По умолчанию, второй аргумент единица.
-
-// function pow(num, n = 1) {
-//     return num ** n;
-// }
-// console.log(pow(5, 2));
-
-                                    // function pow(num, n = 1) {
-                                    //     let result;
-                                    //     for(let i = 1;i <= n; i++) {
-                                    //         result = num*num;
-                                    //         console.log(result);
-                                    //     }
-                                    // }
-                                    // pow(5, 3);
-
-
-
-
-// Создайте функцию repeat(str, n), которая возвращает строку,
-// состоящую из n повторений строки str. n — по умолчанию 2,
-// str — по умолчанию пустая строка
-
-// function repeat(str = '', n = 2) {
-//     return str.repeat (n);
-// }
-// console.log(repeat("Строка", 3));
-
-
-// 1. Создайте объект myFavoriteFilm, описывающий ваш любимый фильм. Объект должен содержать
-//    свойства с названием фильма, с датой выпуска, именем режиссера и страной выпуска.
-
-// let myFavoriteFilm = {
-//  name: "Кровавый спорт",
-//  date: "1980",
-//  reg: "Стивен",
-//  country: "USA",
-// }
-// console.log(myFavoriteFilm);
-
-// 2. Добавить свойство содержащее значение выручки фильма в прокате.
-
-// let myFavoriteFilm = {
-//      title: "Кровавый спорт",
-//      date: "1980",
-//      reg: "Стивен",
-//      country: "USA",
-//     }
-//     myFavoriteFilm.profit = '10.000';
-
-//     myFavoriteFilm.showTitle = function () {
-//         console.log(myFavoriteFilm.title);
-//     };
-
-//     delete myFavoriteFilm.date;
-    // console.log(myFavoriteFilm);
-
-// const ch = (n) => {
-// if (n == n.toUpperCase()) {
-//     console.log(true);
-// } else {
-//     console.log(false);
-// }
-// }
-// console.log(ch('N'));
-
-
-// const isLowerCase = (str, n) => str[n] === str[n].toUpperCase();
-// console.log(isLowerCase("Hello", 3));
-
-
-
-
-
-
-// const comparison = (str1, str2) => {
-//     if (str1.toUpperCase == str2.toUpperCase) {
-//         console.log(true)
+// function change_register(str) {
+//   for (let i = 0; i < str.length; i++) {
+//     if (str[i] === str[i].toLowerCase()) {
+//       result += str[i].toUpperCase();
 //     } else {
-//         console.log(false)
+//       result += str[i].toLowerCase();
 //     }
+//   }
+//   return result;
 // }
-// console.log(comparison('n', 'A'));
 
+// console.log(change_register(str));
 
-// Написать функцию, которая будет принимать массив чисел, содержащий
-//  целые положительные и целые отрицательные числа,
-// в качестве результата возвращать сумму четных положительных элементов
-//  переданного массива.
+// 6. Удалить все не буквенно-цифровые символы
+//    Напишите функцию remove_char(str), которая возвращает строку, очищенную от всех не буквенно-цифровых символов.
 
-// let num = [1, 2, -5, -8, 4, 10, 4];
-// let sum = num.filter((el) => el % 2 === 0);
-// let result = sum.reduce((a, b) => a + b);
-// console.log(result);
+// var str = "every., -/ hunter #! wishes ;: {} to $ % ^ & * know";
 
+// function remove_char(str) {
+//   return str.replace(/[\W_-]/g, " ");
+// }
+// console.log(remove_char(str));
 
-// Написать функцию, которая будет принимать массив чисел, и будет убирать
-// повторяющиеся значения из переданного массива, в качестве результата возвращать
-// новый массив с уникальными значениями из исходного.
+// 7. Нулевое заполнение строки
+//    Напишите функцию zeros(num, len), которая дополняет нулями до указаной длины числовое значение с дополнительным знаком «+» или « -« в
+//    зависимости от передаваемого аргумента.
 
+// function zeros(num, len, sign) {
+//   let sumZero = "";
+//   for (i = 0; i < len; i++) {
+//     sumZero += 0;
+//   }
+//   let result = `${sign}${num}${sumZero}`;
+//   return result;
+// }
+// console.log(zeros(3, 5, "-"));
 
-//  let num = [1, 2, 8, 4, 8, 7, 4];
-//     let findDuble = num.filter((a, b) => num.indexOf(a) === b);
-//     console.log(findDuble);
+// 9. Поиск без учета регистра
+//    Напишите функцию insensitive_search(str1, str2), которая осуществляет поиск подстроки str2 в строке str1 без учёта регистра символов.
 
+// function insensitive_search(str1, str2) {
+//   return str1.toLowerCase().includes(str2.toLowerCase());
+// }
+// console.log(insensitive_search("Hello", "r"));
 
-let temp = -47;
+// 12. Повторить строку n раз
+//     Напишите функцию repeatStr(str, n), которая вовращает строку повторяемую определённое количество раз.
 
-if (temp < -30) {
-    console.log("оставайтесь дома");
-} else if (temp >= -30 && temp <= -10) {
-    console.log("сегодня холодно");
-} else if (temp >= -10 && temp <= 5) {
-    console.log("не холодно");
-} else if (temp >= 5 && temp <= 15) {
-    console.log("тепло");
-} else if (temp >= 15 && temp <= 25) {
-    console.log("очень тепло");
-} else if (temp >= 25 && temp <= 35) {
-    console.log("жарко");
-} else {
-    console.log("прекло");
-}  
+// function repeatStr(str, n) {
+//   let result = "";
+//   for (i = 0; i < n; i++) {
+//     result += str;
+//   }
+//   return result;
+// }
 
-    
+// console.log(repeatStr("Hallo ", 4));
+
+// 13. Получить имя файла
+//     Напишите функцию path(pathname), которая вовращает имя файла (подстрока после последнего символа "\" ) из полного пути к файлу.
+
+// var pathname = "/home/user/dir/file.txt";
+
+// function path(pathname) {
+//   let result = pathname.lastIndexOf("/");
+//   return pathname.slice(result + 1);
+// }
+// console.log(path(pathname));
+
+// 14. Заканчивается ли строка символами другой строки
+//     Создайте метод объекта String endsWith(), который сравнивает подстроку str1 с окончанием исходной строки str и определяет заканчивается
+//     ли строка символами подстроки.
+
+// var str = "Каждый охотник желает знать";
+// var str1 = "скрипт";
+// var str2 = "знать";
+
+// let endsWith = (str) => {
+//   if (str.slice(str.lastIndexOf(" ") + 1) === str2) {
+//     console.log(true);
+//   } else {
+//     console.log(false);
+//   }
+//   return;
+// };
+// console.log(endsWith(str));
+
+// 15. Подстрока до/после указанного символа
+//     Напишите функцию getSubstr(str, char, pos), которая возвращает часть строки, расположенную после или до указанного символа char в
+//     зависимости от параметра pos.
+
+// var str = "Астрономия — Наука о небесных телах";
+
+// function getSubstr(str, char, pos) {
+//   if (pos === -1) {
+//     console.log(str.slice(0, str.indexOf(char)));
+//   } else if (pos === 1) {
+//     console.log(str.slice(str.indexOf(char) + 1));
+//   } else {
+//     console.log("Enter -1 and 1");
+//   }
+//   return;
+// }
+// console.log(getSubstr(str, "б"));
+
+// 16. Вставить подстроку в указанную позицию строки
+//     Напишите функцию insert(str, substr, pos), которая вставляет подстроку substr в указханную позицию pos строки str.
+//     По умолчанию подстрока вставляется в начало строки.
+
+// const str = "Астрономия — Наука о небесных телах";
+
+// function insert(str, substr, pos) {
+//   if (pos <= 0) {
+//     console.log(`${substr} ${str}`);
+//   } else {
+//     console.log(`${str.slice(0, pos)} ${substr} ${str.slice(pos)}`);
+//   }
+//   return;
+// }
+// insert(str, "!!!", 10);
+
+// 17. Ограничить длину строки
+//     Напишите функцию limitStr(str, n, symb), которая обрезает строку, если она длиннее указанного количества символов n.
+//     Усеченная строка должна заканчиваться троеточием «...» (если не задан параметр symb) или заданным символом symb.
+
+// const str = "Астрономия — Наука о небесных телах";
+
+// function limitStr(str, n, symb = "...") {
+//   if (str.length > n) {
+//     console.log(`${str.slice(0, n)} ${symb}`);
+//   } else {
+//     console.log(str);
+//   }
+//   return;
+// }
+// limitStr(str);
+
+// 19. Количество вхождений символа в строке
+//     Напишите функцию count(str, stringsearch), которая возвращает количество символов stringsearch в строке str.
+
+// let symb = "o";
+// let str = "ololo";
+
+// function count(str, symb) {
+//   let result = 0;
+//   for (let i = 0; i < str.length; i++) {
+//     if (str[i] === symb) {
+//       result += 1;
+//     }
+//   }
+//   return result;
+// }
+// console.log(count(str, symb));
+
+// 20. Удалить лишние пробелы из строки
+//     Напишите функцию strip(str), которая удаляет все лишние пробелы из строки str.
+
+// var str = "    Max is a good      boy     ";
+
+// function strip(str) {
+//   return str.replace(/\s+/g, " ").trim();
+// }
+// console.log(strip(str));
+
+// var str = "    Max is    a good              boy     ";
+
+// function strip(str) {
+//   let result = str.trim();
+//   for (; result.includes("  "); ) {
+//     result = result.replaceAll("  ", " ");
+//   }
+//   return result;
+// }
+// console.log(strip(str));
