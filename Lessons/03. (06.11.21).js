@@ -136,3 +136,42 @@
 //     if (n === p) break;
 // }
 // console.log(n,i);
+
+
+
+
+
+
+
+// let a = 1;
+// let b = 2;
+// let c = 3;
+
+// if(a > b && a > c) {
+//     console.log("а больше");
+// } else if(b > a && b > c) {
+//     console.log("b больше");
+// } else {
+//     console.log("c больше");
+// }
+
+
+// let temp = 20;
+
+// if (temp < -30) {
+//     console.log("оставайтесь дома");
+// } else if (temp >= -30 && temp <= -10) {
+//     console.log("сегодня холодно");
+// } else if (temp >= -10 && temp <= 5) {
+//     console.log("не холодно");
+// } else if (temp >= 5 && temp <= 15) {
+//     console.log("тепло");
+// } else if (temp >= 15 && temp <= 25) {
+//     console.log("очень тепло");
+// } else if (temp >= 25 && temp <= 35) {
+//     console.log("жарко");
+// } else {
+//     console.log("прекло");
+// }  
+
+
