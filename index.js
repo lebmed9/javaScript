@@ -165,3 +165,23 @@
 
 
 
+let role = "tae";
+
+switch(role) {
+    case "user": {
+        console.log("18");
+        break;
+}
+    case "manager": {
+        console.log("19");
+        break;
+}       
+    case "admin": {
+        console.log("20");
+        break;
+}   
+    default: {
+        console.log("?");
+        break;
+}
+}
