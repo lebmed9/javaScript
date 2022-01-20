@@ -1,13 +1,13 @@
-const user1 = {
-  name: "Дмитрий",
-  sayName(phrase) {
-    console.log(this.name + " " + phrase);
-  },
-};
+// const user1 = {
+//   name: "Дмитрий",
+//   sayName(phrase) {
+//     console.log(this.name + " " + phrase);
+//   },
+// };
 
-const user2 = {
-  name: "Андрей",
-};
+// const user2 = {
+//   name: "Андрей",
+// };
 
 // Object.freeze(user2);
 
