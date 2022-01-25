@@ -1,0 +1,211 @@
+:root {
+    --color-green: #B5DDA8;
+    --color-green-hover: #A1C594;
+    --color-green-btn: #588349;
+    --color-green-btn-hover: #5F7757;
+    --color-blue-btn: #6E95AB;
+    --color-blur-btn-hover: #678698;
+    --color-blue-hover: #678698;
+    --color-text-light: #414141;
+    --color-green-btn-white-hover: #DEF8D4;
+    --color-green-background: #E6EAE5;
+    --color-grey-background: #73727A;
+    --color-grey-border: #BFBFBF;
+    --color-grey-border-form: #D1CACA;
+    --color-red-border-form-hover: #AD8686;
+    --color-red-border-form-check: #716262;
+    
+  }
+
+
+
+/* ================== section-news__mobile ========== */
+
+.section-news__mobile {
+    display: block;
+    background-color: #E6EAE5;
+    text-align: center;
+  }
+  .section-news__mobile h2 {
+      font-size: 72px;
+      color: var(--color-green-btn);
+    margin: 0;
+    padding-top: 17px;
+    padding-bottom: 29px;
+  }
+
+  .section-news__mobile p {
+    font-weight: 300;
+    letter-spacing: 0.04;
+    line-height: 130%;
+    font-size: 36px;
+    margin-top: 0;
+  }
+
+  .section-news__mobile p:last-child {
+    margin-top: 10px;
+    margin-bottom: 0;
+    padding-bottom: 30px;
+    font-size: 16px;
+  }
+
+  .news__mobile-name {
+    display: inline-block;
+    width: 467px;
+    height: 52px;
+    margin-top: 28px;
+    margin-bottom: 22px;
+    padding-left: 10px;
+    margin-right: 20px;
+    font-weight: 500;
+    letter-spacing: 0.07;
+    line-height: 130%;
+    font-size: 18px;
+    border: none;
+  }
+
+  .news__mobile-mail {
+    display: inline-block;
+    width: 688px;
+    height: 52px;
+    margin-bottom: 19px;
+    margin-right: 20px;
+    padding-left: 10px;
+    font-weight: 500;
+    letter-spacing: 0.07;
+    line-height: 130%;
+    font-size: 18px;
+    border: none;
+  }
+
+  .news__mobile-name:hover {
+    border: 2px solid var(--color-red-border-form-hover);
+    outline: none;
+  }
+
+  .news__mobile-name:focus {
+    border: 2px solid var(--color-red-border-form-check);
+    outline: none;
+  }
+  .news__mobile-mail:hover {
+    border: 2px solid var(--color-red-border-form-hover);
+    outline: none;
+  }
+
+  .news__mobile-mail:focus {
+    border: 2px solid var(--color-red-border-form-check);
+    outline: none;
+  }
+
+
+
+
+
+  @media screen and (max-width: 1024px) {
+    .page-header__background {
+      background-position: top center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin: 0 auto;
+    }
+  
+    .page-section {
+        margin-bottom: 50px;
+        padding-top: 50px;
+    }
+    
+    .section-text {
+      font-size: 16px;
+      padding-left: 10px;
+      text-align: center;
+      margin: auto;
+      margin-bottom: 50px;
+    }
+    .section-news__mobile {
+        display: block;
+        background-color: #E6EAE5;
+        text-align: center;
+      }
+      .section-news__mobile h2 {
+          font-size: 24px;
+        margin: 0;
+        padding-top: 17px;
+        padding-bottom: 29px;
+      }
+    
+      .section-news__mobile p {
+        font-weight: 300;
+        letter-spacing: 0.04;
+        line-height: 130%;
+        font-size: 16px;
+      }
+    
+      .section-news__mobile p:last-child {
+        margin-top: 10px;
+        margin-bottom: 0;
+        padding-bottom: 30px;
+        font-size: 14px;
+      }
+    
+      .news__mobile-name {
+        width: 281px;
+        height: 21px;
+        margin-top: 28px;
+        margin-bottom: 22px;
+        font-weight: 500;
+        letter-spacing: 0.07;
+        line-height: 130%;
+        font-size: 7px;
+        border: none;
+      }
+    
+      .news__mobile-mail {
+        width: 281px;
+        height: 21px;
+        margin-bottom: 19px;
+        font-weight: 500;
+        letter-spacing: 0.07;
+        line-height: 130%;
+        font-size: 7px;
+        border: none;
+      }
+  }  
+    
+
+
+
+      @media screen and (max-width: 450px) {
+        .page-header__background-contact {
+          display: none;
+          
+        }
+        .section-text {
+            display: none;
+        }
+
+        .section-news__mobile {
+            display: none;
+        }
+
+        .page-footer {
+            display: none;
+        }
+        .section-social__mobile-tel {
+            margin-left: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 146px;
+        }
+
+        .section-social__mobile-tel p {
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+        .section-social__mobile-text {
+            text-align: left;
+        }
+        
+        
+}

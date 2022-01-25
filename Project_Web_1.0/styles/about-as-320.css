@@ -1,0 +1,138 @@
+
+@media screen and (max-width: 1024px) {
+    .page-header__background {
+      background-position: top center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin: 0 auto;
+    }
+  
+    .page-section {
+        margin-bottom: 50px;
+        padding-top: 50px;
+    }
+    
+    .section-text {
+      font-size: 16px;
+      padding-left: 10px;
+      text-align: center;
+      margin: auto;
+      margin-bottom: 50px;
+    }
+  
+    .section-block img {
+      height: auto;
+      width: 100%;
+      overflow: hidden;
+    }
+  
+    
+    .section-block__text--left {
+      font-size: 16px;
+      display: block;
+      text-align: center;
+      margin: auto;
+      padding-left: 10px;
+      flex-shrink: 1;
+      width: auto;
+      padding-top: 50px;
+    }
+  
+    .section-block__text--right {
+      font-size: 16px;
+      display: block;
+      text-align: center;
+      margin: auto;
+      padding-left: 10px;
+      flex-shrink: 1;
+      width: auto;
+      padding-top: 50px;
+
+    }
+}
+    
+    @media screen and (max-width: 450px) {
+        .page-header__background-about-as {
+          background-image: url('../images/banner_about_us-320.jpg');
+          background-position: bottom center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          margin: 0 auto;
+          height: 226px;
+        }
+        
+        .section-text {
+          font-size: 10px;
+          margin-bottom: 42px;
+          text-align: center;
+          padding-left: 20px;
+          padding-right: 20px;
+        }
+      
+        .section-block__mobile--right {
+          margin-bottom: 78px;
+        }
+        .section-block__mobile {
+          display: flex;
+          flex-direction: column-reverse;
+          margin-bottom: 32px;
+          }
+      
+          .section-block__mobile--right{
+            display: block;
+          }
+      
+          .section-block__mobile--text {
+            font-size: 10px;
+            text-align: center;
+            padding-left: 20px;
+            padding-right: 20px;
+            margin-top: 17px;
+            font-weight: 400;
+            letter-spacing: 0.07em;
+            line-height: 130%;
+            width: auto;
+          }
+      
+          .section-block img {
+            height: auto;
+            width: 100%;
+            overflow: hidden;
+          }
+      
+          .button-blue__charity--mobile {
+            width: 102px;
+            height: 12px;
+            font-size: 7px;
+            text-align: center;
+            font-weight: 400;
+            letter-spacing: 0.07em;
+            line-height: 130%;
+            width: auto;
+            margin-bottom: 32px;
+            margin-top: 32px;
+          }
+      
+        /* .column-rev {
+          display: none;
+        } */
+          .section-text {
+            display: none;
+          }
+          .section-block {
+            display: none;
+          }
+          .page-section__btn-about-as {
+            display: none;
+          }
+          .section-social__mobile {
+            display: block;
+          }
+          .section-text__mobile {
+            display: block;
+            padding-left: 13%;
+            padding-right: 13%;
+          }
+
+      
+  }

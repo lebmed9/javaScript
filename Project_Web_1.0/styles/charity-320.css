@@ -1,0 +1,126 @@
+
+@media screen and (max-width: 1024px) {
+  .page-header__background {
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+  }
+
+  
+  .section-text {
+    font-size: 16px;
+    padding-left: 10px;
+    text-align: center;
+    margin: auto;
+  }
+
+  .section-block img {
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .section-block__mobile--right {
+    justify-content: start;
+  }
+  .section-block__text--left {
+    font-size: 16px;
+    display: block;
+    text-align: center;
+    margin: auto;
+    padding-left: 10px;
+    flex-shrink: 1;
+    width: auto;
+  }
+
+  .section-block__text--right {
+    font-size: 16px;
+    display: block;
+    text-align: center;
+    margin: auto;
+    padding-left: 10px;
+    flex-shrink: 1;
+    width: auto;
+  }
+  
+  .column-rev {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 32px;
+  }
+    
+}
+
+@media screen and (max-width: 450px) {
+  .page-header__background-charity {
+    background-image: url('../images/charity-cover-320.jpg');
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+    height: 221px;
+  }
+  
+  .section-text {
+    font-size: 10px;
+    margin-bottom: 42px;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .section-block__mobile--right {
+    margin-bottom: 78px;
+  }
+  .section-block__mobile {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 32px;
+    }
+
+    .section-block__mobile--right{
+      display: block;
+    }
+
+    .section-block__mobile--text {
+      font-size: 10px;
+      text-align: center;
+      padding-left: 20px;
+      padding-right: 20px;
+      margin-top: 17px;
+      font-weight: 400;
+      letter-spacing: 0.07em;
+      line-height: 130%;
+      width: auto;
+    }
+
+    .section-block img {
+      height: auto;
+      width: 100%;
+      overflow: hidden;
+    }
+
+    .button-blue__charity--mobile {
+      width: 102px;
+      height: 12px;
+      font-size: 7px;
+      text-align: center;
+      font-weight: 400;
+      letter-spacing: 0.07em;
+      line-height: 130%;
+      width: auto;
+      margin-bottom: 32px;
+      margin-top: 32px;
+    }
+
+  .column-rev {
+    display: none;
+  } 
+    
+ 
+  
+
+}
+
+
