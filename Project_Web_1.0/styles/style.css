@@ -113,11 +113,6 @@ h2 {
   margin: 0 auto;
 }
 
-.button-blue-charity {
-  margin-top: 140px;
-  margin-bottom: 348px;
-}
-
 .text-title {
   font-size: 72px;
   letter-spacing: 0.05em;
@@ -154,28 +149,28 @@ h2 {
   background-position: center right;
   background-repeat: no-repeat;
   background-size: cover;
-  max-height: 987px;
+  height: 980px;
   margin: 0 auto;
 }
 
 .page-header__background-charity {
   background-image: url("../images/chaity-cover.jpg");
-  height: 987px;
+  height: 980px;
 }
 
 .page-header__background-about-as {
   background-image: url("../images/banner_about_us.jpg");
-  height: 987px;
+  height: 980px;
 }
 
 .page-header__background-preview {
   background-image: url("../images/img_banner.jpg");
-  height: 987px;
+  height: 980px;
 }
 
 .page-header__background-contact {
   background-image: url("../images/banner_contact.jpg");
-  height: 987px;
+  height: 980px;
 }
 
 .page-header__flex {
@@ -183,7 +178,6 @@ h2 {
   justify-content: space-between;
   align-items: center;
   padding-top: 46px;
-  /* max-width: 1440px; */
   box-sizing: content-box;
   margin: 0 auto;
 }
@@ -199,7 +193,7 @@ h2 {
   color: white;
 }
 .mainmenu__item {
-  margin-right: 30px;
+  margin-right: 25px;
 }
 .mainmenu__item:last-child {
   margin-right: 0;
@@ -409,37 +403,34 @@ h2 {
 }
 
 .section-block__text--right {
-  /* display: flex;
-  align-items: center;
-  flex-wrap: wrap; */
   margin: auto;
   font-size: 21px;
-  /* max-width: 597px; */
-  padding-left: 10%;
+  max-width: 597px;
+  padding-left: 8%;
   padding-right: 0;
   min-width: 50%;
-  /* flex-shrink: 0; */
   line-height: 130%;
   color: #2e2b2b;
+  margin-right: 20px;
 }
 
 .section-block__text--left {
-  /* display: flex;
-  align-items: center;
-  flex-wrap: wrap; */
   margin: auto;
   font-size: 21px;
-  /* max-width: 597px; */
-  padding-right: 10%;
+  max-width: 597px;
+  padding-right: 8%;
   padding-left: 0;
   min-width: 50%;
   flex-shrink: 0;
   line-height: 130%;
   color: #2e2b2b;
+  margin-left: 20px;
 }
 
 .section-block img {
   overflow: hidden;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .section-answer__list {
@@ -470,15 +461,6 @@ h2 {
   color: #2e2b2b;
 }
 
-.section-charity__title {
-  font-size: 72px;
-  color: #000;
-  letter-spacing: 0.05em;
-  padding-bottom: 59px;
-  padding-top: 211px;
-  font-weight: 900;
-}
-
 .section-command__title {
   font-size: 60px;
   color: #000;
@@ -486,11 +468,16 @@ h2 {
   font-weight: 900;
 }
 
+.section-command {
+  margin-top: 187px;
+  margin-bottom: 187px;
+}
+
 /* --------------------------------- section-answer ------------------------- */
 
 .section-answer {
-  padding-top: 161px;
-  padding-bottom: 200px;
+  padding-top: 150px;
+  padding-bottom: 150px;
   background-color: var(--color-green-background);
   text-align: center;
 }
@@ -508,7 +495,6 @@ h2 {
 }
 
 .section-answer__list li {
-  /* width: 230px; */
   text-align: center;
 }
 
@@ -527,10 +513,9 @@ h2 {
 
 .page-footer__flex {
   display: flex;
-  height: 87px;
+  height: 90px;
   justify-content: space-between;
   align-items: center;
-  max-width: 1440px;
   list-style-type: none;
   color: white;
   margin: 0 auto;
@@ -962,15 +947,13 @@ h2 {
   }
 
   .section-block__travel,
-  .section-block__holiday,
-  .section-block__charity {
+  .section-block__holiday {
     flex-direction: column-reverse;
     align-items: center;
     padding-right: 0;
   }
   .section-block__text--left {
     margin-left: 0;
-    margin-top: 50px;
     padding-left: 50px;
     padding-right: 0;
     margin-right: auto;
@@ -979,18 +962,20 @@ h2 {
 
   .section-block__text--right {
     padding-left: 50px;
+    margin: 0 auto;
+  }
 
+  .section-block img {
+    margin: 0;
+  }
+
+  .section-block__text-title {
     margin-top: 50px;
-    margin: 0 auto;
   }
 
-  .section-charity__title {
-    font-size: 36px;
-    text-align: center;
-    margin: 0 auto;
-  }
   .section-text__main h2 {
     font-size: 36px;
+    margin-top: 105px;
   }
   .section-command__title {
     font-size: 36px;
@@ -1016,6 +1001,10 @@ h2 {
   .page-footer__copyright-mobile {
     display: block;
   }
+
+  .section-answer__list {
+    column-gap: 60px;
+  }
 }
 
 @media screen and (max-width: 450px) {
@@ -1024,6 +1013,7 @@ h2 {
     background-position: right center;
     background-repeat: no-repeat;
     background-size: cover;
+    height: 228px;
     margin: 0 auto;
   }
   .page-header__background-charity {
@@ -1140,10 +1130,6 @@ h2 {
     display: block;
   }
 
-  .section-charity {
-    display: none;
-  }
-
   .section-block {
     display: none;
   }
@@ -1218,10 +1204,6 @@ h2 {
     padding-right: 34px;
     padding-bottom: 15px;
     margin: 0;
-  }
-
-  .charity__mobile--text {
-    min-height: 170px;
   }
 
   .section-slider__btn {
