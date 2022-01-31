@@ -1142,6 +1142,14 @@ h2 {
     display: block;
   }
 
+  .section-slider__mobile-item {
+    display: none;
+  }
+
+  .section-slider__mobile-item.active {
+    display: block;
+  }
+
   .section-slider__mobile-flex {
     /* display: flex; */
     position: relative;
