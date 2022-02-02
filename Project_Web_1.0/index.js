@@ -36,3 +36,23 @@ function initSlider(item) {
     items[index].classList.add("active");
   });
 }
+
+//========================================== popup login ===================
+
+let popup = document.getElementById("mypopup"),
+  popupToggle = document.getElementById("mybtn"),
+  popupClose = document.querySelector(".popup__close");
+
+popupToggle.onclick = function () {
+  popup.style.display = "block";
+};
+
+popupClose.onclick = function () {
+  popup.style.display = "none";
+};
+
+window.onclick = function (e) {
+  if (e.target == popup) {
+    popup.style.display = "none";
+  }
+};
