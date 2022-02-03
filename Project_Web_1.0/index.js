@@ -39,20 +39,68 @@ function initSlider(item) {
 
 //========================================== popup login ===================
 
-let popup = document.getElementById("mypopup"),
-  popupToggle = document.getElementById("mybtn"),
-  popupClose = document.querySelector(".popup__close");
+// let popup = document.querySelector('.popup');
+// let popupContent = document.querySelector('.popup-content');
+// let openButtons = document.querySelectorAll('.open-popup');
+// let popupClose = document.querySelector('.popup-close');
 
-popupToggle.onclick = function () {
-  popup.style.display = "block";
-};
+// openButtons.forEach((butto) => {
+//   butto.addEventListener('click', (e) => {
+//     e.preventDefault();
+//     popup.classList.add('active');
+//     popupContent.classList.add('active');
+//   });
+// });
 
-popupClose.onclick = function () {
-  popup.style.display = "none";
-};
+// popupClose.addEventListener('click', () => {
+//   popup.classList.remove('active');
+//   popupContent.classList.remove('active');
+// } );
 
-window.onclick = function (e) {
-  if (e.target == popup) {
-    popup.style.display = "none";
-  }
-};
+// document.addEventListener('click', (e) => {
+//   if(e.target === popup) {
+//     popup.classList.remove('active');
+//     popupContent.classList.remove('active');
+//   }
+// });
+
+
+
+
+
+// let popup = document.querySelector('.popup');
+
+
+
+let openButtons = document.querySelectorAll('.open-popup');
+let popupContent = document.querySelector('.popup-content');
+
+let popupClose = document.querySelectorAll('.popup-close');
+
+
+openButtons.forEach(function(item) {
+  item.addEventListener('click', () => {
+    let popupLoginName = item.getAttribute('data-popup');
+    let popupContentName = item.getAttribute('data-popup-con');
+    document.getElementById(popupLoginName).classList.add('active');
+    document.getElementById(popupContentName).classList.add('active');
+  })
+})
+
+popupClose.forEach(function(item) {
+  item.addEventListener('click', () => {
+    let popupClose = item.closest('.popup');
+    let popupCloseContent = item.closest('.popup-content');
+    popupClose.classList.remove('active');
+    popupCloseContent.classList.remove('active');
+  })
+})
+
+
+document.addEventListener('click', (e) => {
+  if(e.target.classList.contains('popup')) {
+    e.target.classList.remove('active');
+    function
+    // не закрывается active на popup-Content
+  } 
+});

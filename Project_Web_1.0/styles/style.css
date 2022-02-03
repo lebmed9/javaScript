@@ -16,48 +16,6 @@
   --color-red-border-form-check: #716262;
 }
 
-.popup {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(59, 57, 59, 0.8);
-  top: 0;
-  left: 0;
-  display: none;
-  /* opacity: 0;
-  visibility: hidden; */
-}
-
-/* .popup:target {
-  opacity: 1;
-  visibility: visible;
-} */
-
-.popup-sing {
-  background-color: skyblue;
-  padding: 15px;
-}
-
-.popup-content {
-  min-height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.popup__close {
-  position: absolute;
-  right: 5px;
-  top: -25px;
-  font-size: 20px;
-  color: red;
-  text-decoration: none;
-}
-
-.popup-sing {
-  position: relative;
-}
-
 /* common  */
 
 * {
@@ -86,7 +44,82 @@ h2 {
   margin: 0 auto;
 }
 
-/* button */
+/*===============================  popup  ======================================*/
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.popup.active {
+  opacity: 1;
+  pointer-events: all;
+  transition: 0.5s all;
+}
+
+.popup-content {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  background: white;
+  max-width: 500px;
+  padding: 25px;
+  padding-top: 45px;
+  border-radius: 8px;
+  transition: 00.5s all;
+}
+
+.popup-content.active {
+  transform: translate(-50%, -50%) scale(1);
+  transition: 00.5s all;
+}
+
+.popup-close {
+  position: absolute;
+  display: block;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.popup-content label {
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.popup-content .lable-text {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #a1c594;
+  margin-bottom: 5px;
+}
+
+.popup-content input {
+  height: 30px;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #a1c594;
+  margin-bottom: 20px;
+}
+
+.popup-content input:hover {
+  border-bottom: 1px solid var(--color-green-btn-hover);
+}
+
+.popup-content input:hover + .lable-text {
+  color: var(--color-green-btn-hover);
+}
+
+/*======================================  button  ================================*/
 
 .button {
   display: inline-flex;
@@ -126,6 +159,7 @@ h2 {
   transition: all 0.25s ease;
   margin-left: 10%;
 }
+
 .button-cover:hover {
   background-color: var(--color-green-hover);
 }
@@ -134,6 +168,7 @@ h2 {
   width: 278px;
   background-color: var(--color-blue-btn);
 }
+
 .button-blue:hover {
   background-color: var(--color-blur-btn-hover);
 }
@@ -145,6 +180,7 @@ h2 {
   border: 2px solid var(--color-green-btn);
   color: var(--color-green-btn);
 }
+
 .button-white:hover {
   background-color: var(--color-green-btn-white-hover);
 }
