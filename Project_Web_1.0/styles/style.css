@@ -398,8 +398,8 @@ h2 {
 }
 
 .section-text__main {
-  margin-top: 105px;
-  margin-bottom: 131px;
+  margin-top: 100px;
+  margin-bottom: 50px;
 }
 
 .page-section__title-contact {
@@ -440,8 +440,7 @@ h2 {
 
 .page-section__btn-about-as {
   text-align: center;
-  margin-top: 109px;
-  margin-bottom: 264px;
+  margin-bottom: 100px;
 }
 
 .block__date {
@@ -490,7 +489,7 @@ h2 {
 
 .section-block {
   display: flex;
-  margin-bottom: 187px;
+  margin-bottom: 150px;
 }
 
 .fz18 {
@@ -1271,7 +1270,7 @@ h2 {
   }
 
   .section-slider__mobile-text {
-    min-height: 200px;
+    height: 200px;
     padding-top: 10px;
     padding-bottom: 10px;
     background-color: #f3f3f3;
@@ -1317,19 +1316,21 @@ h2 {
   .section-slider__btn-right {
     position: absolute;
     left: 248px;
-    bottom: 179px;
+    bottom: 183px;
     border: none;
     outline: none;
     background-color: white;
+    transform: rotate(90deg);
   }
 
   .section-slider__btn-left {
     position: absolute;
-    left: -33px;
-    bottom: 179px;
+    left: -50px;
+    bottom: 183px;
     border: none;
     outline: none;
     background-color: white;
+    transform: rotate(270deg);
   }
 
   /* ======================  section-block__mobile  ============================== */
